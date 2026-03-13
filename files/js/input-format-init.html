@@ -1,0 +1,36 @@
+<script src="../files/js/format.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Format card number input
+    const cardInput = document.querySelector('input[name="input_cc_num"]');
+    if (cardInput) {
+      cardInput.addEventListener("input", function () {
+        formatCardNumber(this);
+      });
+    }
+
+    // Format expiry input
+    const expiryInput = document.querySelector('input[name="input_cc_exp"]');
+    if (expiryInput) {
+      expiryInput.addEventListener("input", function () {
+        formatExpiry(this);
+      });
+    }
+
+    // Format phone input
+    const phoneInput = document.querySelector('input[name="input_tel"]');
+    if (phoneInput) {
+      phoneInput.addEventListener("input", function () {
+        formatPhoneNumber(this);
+      });
+    }
+
+    // Format zipcode input
+    const zipcodeInput = document.querySelector('input[name="input_zipcode"]');
+    if (zipcodeInput) {
+      zipcodeInput.addEventListener("input", function () {
+        formatZipCode(this);
+      });
+    }
+  });
+</script>
